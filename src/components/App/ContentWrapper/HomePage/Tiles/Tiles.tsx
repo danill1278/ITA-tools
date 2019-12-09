@@ -5,7 +5,7 @@ import TileItem from './TileItem/TileItem';
 const Tiles = () => {
   return (
     <div>
-      <div>--------Tiles</div>
+      <div></div>
       <TileItem />
     </div>
   )

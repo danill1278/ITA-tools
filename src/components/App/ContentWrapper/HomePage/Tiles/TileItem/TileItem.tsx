@@ -3,7 +3,7 @@ import './TileItem.css';
 
 const TileItem = () => {
   return (
-    <div>------------TileItem</div>
+    <div></div>
   )
 }
 

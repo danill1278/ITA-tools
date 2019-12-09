@@ -6,4 +6,4 @@ export const changeProjectTitle = (title: string) => {
         type: CHANGE_PROJECT_TITLE,
         payload: title
     }
-}
+};

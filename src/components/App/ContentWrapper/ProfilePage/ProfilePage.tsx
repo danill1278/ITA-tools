@@ -4,7 +4,7 @@ import './ProfilePage.css';
 const ProfilePage = () => {
   return (
     <div>
-      <div>----ProfilePage</div>
+      <div></div>
     </div>
   )
 }

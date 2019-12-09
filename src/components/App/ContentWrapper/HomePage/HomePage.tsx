@@ -5,7 +5,7 @@ import Tiles from './Tiles/Tiles';
 const HomePage = () => {
   return (
     <div>
-      <div>----HomePage</div>
+      <div></div>
       <Tiles />
     </div>
   )
