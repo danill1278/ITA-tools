@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ita-tools/static/css/main.b5c165bc.chunk.css",
+    "main.js": "/ita-tools/static/js/main.f22f6b6e.chunk.js",
+    "main.js.map": "/ita-tools/static/js/main.f22f6b6e.chunk.js.map",
+    "runtime-main.js": "/ita-tools/static/js/runtime-main.62a55622.js",
+    "runtime-main.js.map": "/ita-tools/static/js/runtime-main.62a55622.js.map",
+    "static/js/2.343bd4ea.chunk.js": "/ita-tools/static/js/2.343bd4ea.chunk.js",
+    "static/js/2.343bd4ea.chunk.js.map": "/ita-tools/static/js/2.343bd4ea.chunk.js.map",
+    "index.html": "/ita-tools/index.html",
+    "precache-manifest.6187345495e0ef18f433ebf8b5aabcd0.js": "/ita-tools/precache-manifest.6187345495e0ef18f433ebf8b5aabcd0.js",
+    "service-worker.js": "/ita-tools/service-worker.js",
+    "static/css/main.b5c165bc.chunk.css.map": "/ita-tools/static/css/main.b5c165bc.chunk.css.map",
+    "static/media/FontAwesome.css": "/ita-tools/static/media/icomoon.e9b0b6b3.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62a55622.js",
+    "static/js/2.343bd4ea.chunk.js",
+    "static/css/main.b5c165bc.chunk.css",
+    "static/js/main.f22f6b6e.chunk.js"
+  ]
+}
