@@ -1,10 +1,22 @@
 import React from 'react';
-import './Title.css';
+import styled from 'styled-components';
+import { titleType } from "../types/shared-types";
 
-const Title = () => {
+interface Props {
+  text: string;
+  variant: titleType
+}
+
+const Title: React.FC<Props> = ({variant, text}) => {
+  const Title = styled(variant)`
+  font-size: ${variant === 'h1' ? "50px" : variant === 'h2' ? "36px" : '25px'};
+  color: #20233f;
+  font-weight: bold;
+  `;
+
   return (
-    <div>----Title</div>
+    <Title>{text}</Title>
   )
-} 
+};
 
 export default Title;
