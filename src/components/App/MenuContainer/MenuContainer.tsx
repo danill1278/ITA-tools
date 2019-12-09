@@ -13,51 +13,42 @@ const MainMenu = styled.div`
 const MenuContainer = () => {
     const [openId, setopenId] = useState(0);
     const [isOpen, setIsOpen] = useState(true);
+    //const [itemNext, setIsNext] = useState({});
     const onClickMenuItem = (id: number) => {
         setopenId(id);
         setIsOpen(!isOpen);
+       /* if((id === (11| 12| 13)) && itemNext2){
+            setIsNext(itemNext2)
+        } else if ((id === (21| 22| 23)) && itemNext3){
+            setIsNext(itemNext3)
+        }
+        setIsNext({});*/
     };
+    let itemNext2 = menuList.section2.find((menuItem: any) => menuItem.previousId === openId);
+    let itemNext3 = menuList.section3.find((menuItem: any) => menuItem.previousId === openId);
+    console.log(itemNext2, itemNext3);
 
     return (
         <MainMenu>
             <Logo/>
             <NavigationMenu onClick = {onClickMenuItem}
-                            isOpen={ isOpen }
+                            isOpen={ true }
                             menu={ menuList.section1 }/>
             <Chat/>
 
-            {menuList.section2.map((menuItem: any) => {
-                    console.log(menuItem.previousId, openId);
-                    console.log(menuItem.menu.map((item: any) => item.id), openId);
-                    if (menuItem.previousId === openId) {
-                        return (
+            {((openId === (11 | 12 | 13)) && itemNext2) &&
                             <NavigationMenu
-                                key={menuItem.menu.map((item: any) => item.id)}
                                 onClick={onClickMenuItem}
-                                menu={menuItem.menu}
+                                menu={itemNext2.menu}
+                                isOpen={ true }
+                            />
+            }
+            {((openId === (21 | 22 | 23 )) && itemNext3) &&
+                            <NavigationMenu
+                                onClick={onClickMenuItem}
+                                menu={itemNext3.menu}
                                 isOpen={true}
                             />
-                        );
-                    } else {
-                        console.log("hello");
-                        for (let itemId of menuItem.menu.map((item: any) => item.id)) {
-                            console.log(itemId);
-                            if (itemId === openId) {
-                                menuList.section3.map((item: any) => {
-                                    console.dir(item);
-                                    return (
-                                        <NavigationMenu
-                                            key={item.menu.map((itemMenu: any) => itemMenu.id)}
-                                            onClick={onClickMenuItem}
-                                            menu={item.menu}
-                                            isOpen={true}
-                                        />)
-                                })
-                            }
-                        }
-                    }
-                }
-                )
                 }
         </MainMenu>
 

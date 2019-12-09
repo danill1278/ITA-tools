@@ -19,9 +19,7 @@ const MenuItems = ( props: any) => {
     return (
         <MenuItem onClick = {() => props.onClick(props.menuItem.id)}>
             <Icon className= {`icon ${props.menuItem.icon}`}/>
-            <Name  style={{
-                display: props.isOpen ? "inline" : "none"
-            }}>{props.menuItem.name}</Name>
+            {props.isOpen && <Name>{props.menuItem.name}</Name>}
         </MenuItem>
     )
 };

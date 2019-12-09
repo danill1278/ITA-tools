@@ -2,6 +2,7 @@ import React from 'react';
 import './NavigationMenu.css';
 import MenuItems from './MenuItems/MenuItems';
 import styled from "styled-components";
+import {menuList} from "../menuList";
 
 
 const MenuMain = styled.ul `

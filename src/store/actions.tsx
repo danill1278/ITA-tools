@@ -1,9 +1,13 @@
+import { ADD_SUBMENU} from "./actions-constants";
+import { REMOVE_SUBMENU} from "./actions-constants";
 
-import { CHANGE_PROJECT_TITLE } from './actions-constants';
+export const addSubmenu = (id: number) => ({
+        type: ADD_SUBMENU,
+        id
+});
 
-export const changeProjectTitle = (title: string) => {
-    return {
-        type: CHANGE_PROJECT_TITLE,
-        payload: title
-    }
-};
+export const removeSubmenu = (id: number) => ({
+        type: REMOVE_SUBMENU,
+        id
+});
+
