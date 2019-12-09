@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f9068785197e3d861446d36fbbd0582",
+    "revision": "53afbdad8e1f6a615d94646fe25960de",
     "url": "/ita-tools/index.html"
   },
   {
-    "revision": "2df5673934839f5ab1a9",
+    "revision": "4523711e53d960619ba3",
     "url": "/ita-tools/static/css/main.b5c165bc.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ita-tools/static/js/2.343bd4ea.chunk.js"
   },
   {
-    "revision": "2df5673934839f5ab1a9",
-    "url": "/ita-tools/static/js/main.f22f6b6e.chunk.js"
+    "revision": "4523711e53d960619ba3",
+    "url": "/ita-tools/static/js/main.ed62cebb.chunk.js"
   },
   {
     "revision": "b4324665e4db04ef27ad",
