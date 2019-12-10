@@ -7,6 +7,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux'; 
 import { rootReducer } from './store/reduces';
 import { BrowserRouter } from 'react-router-dom';
+import Logo from "../src/components/App/MenuContainer/Logo/Logo";
 
 const store = createStore(rootReducer);
 

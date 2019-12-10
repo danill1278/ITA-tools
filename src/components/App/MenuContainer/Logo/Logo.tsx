@@ -1,9 +1,10 @@
 import React from 'react';
 import './Logo.css';
+const logo = require('../../../../../src/assets/images/Logo.png');
 
 const Logo = () => {
   return (
-    <div>----Logo</div>
+     <img src={logo} alt="Logo" />
   )
 } 
 
