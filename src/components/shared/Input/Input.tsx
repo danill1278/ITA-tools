@@ -13,21 +13,26 @@ interface Props {
 const StyledFieldSet = styled.fieldset`
   position: relative;
   border: none;
-  margin-top: 20px;`;
+  height: 30px;
+  padding: 15px 0px;
+  `;
 
 const StyledLabel = styled.label`
   position: absolute;
-  top: 18px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 27px;
   font-size: 14px;
   color: #20233f;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  line-height: 0px;
 `;
 
 const StyledInput = styled.input`
   border-radius: 50px;
   border: 2px solid #20233f;
-  padding: 10px 15px;
+  padding: 0px 15px;
+  height: 30px;
   font-size: 14px;
   width: 450px;
   color: #20233f;
@@ -36,7 +41,7 @@ const StyledInput = styled.input`
   &:focus + ${StyledLabel},
   &:valid + ${StyledLabel} {
     font-size: 12px;
-    transform: translate(15px, -30px);
+    transform: translate(0, -25px);
     border-color: #346ef3;
     color: #346ef3;
   }
