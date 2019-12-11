@@ -4,22 +4,23 @@ import { btnType } from "../types/shared-types";
 
 interface Props {
   handleClick() : void;
-  type?: btnType
-  label: string
+  type?: btnType;
+  label: string;
 }
 
-const Button: React.FC<Props> = ({handleClick, type = 'button', label}) => {
-  const Button = styled.button`
+const StyledButton = styled.button`
+  display: block;
+  margin-top: 20px;
   background-color: #20233f;
   color: #ffffff;
   font-weight: bold;
   border-radius: 50px;
   border: 2px solid #20233f;
-  box-shadow: 2.5px 4.33px 29px 0px rgb( 0, 0, 0 );
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, .4);
   outline: none;
   padding: 8px 0px;
-  width: 180px;
-  font-size: 16pt;
+  width: 160px;
+  font-size: 16px;
   transition: all 0.5s ease;
   &:hover {
     background-color: #ffffff;
@@ -27,10 +28,12 @@ const Button: React.FC<Props> = ({handleClick, type = 'button', label}) => {
     color: #20233f;
   }`;
 
+const Button: React.FC<Props> = ({handleClick, type = 'button', label}) => {
+
   return (
-      <Button onClick={handleClick} type={type}>
+      <StyledButton onClick={handleClick} type={type}>
         {label}
-      </Button>
+      </StyledButton>
   )
 };
 
