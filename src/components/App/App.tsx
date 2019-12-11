@@ -4,7 +4,6 @@ import styled from "styled-components";
 import MenuContainer from './MenuContainer/MenuContainer';
 import ContentWrapper from './ContentWrapper/ContentWrapper';
 
-
 const Page = styled.div`
     display: grid;
     grid-template-columns: max-content  1fr;
