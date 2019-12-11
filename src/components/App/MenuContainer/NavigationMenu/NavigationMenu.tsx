@@ -1,28 +1,32 @@
 import React from 'react';
-import './NavigationMenu.css';
 import MenuItems from './MenuItems/MenuItems';
 import styled from "styled-components";
-import {menuList} from "../menuList";
 
 
 const MenuMain = styled.ul `
     display: flex;
     flex-direction: column;
-    height: 100%;
     list-style-type: none;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0 auto;
+    color: ${props => (props.color === "white" )? "rgb(32,35,63)": "rgb(248,247,255)" };
+    background-color: ${props => (props.color === "black" ) ? 
+    "rgb(32,35,63)" :
+    ((props.color === "grey") ? 
+        "rgb(69,70,91)" :
+        "rgb(236,236,241)")};
 `;
 
-const NavigationMenu = (props: any) => {
-    console.dir(props);
+export const NavigationMenu = ({color, menu, activeId, isOpenText}: any) => {
   return (
-        <MenuMain>
-            {props.menu.map((menuItem: any) => {
+        <MenuMain color = {color}>
+            {menu.map((menuItem: any) => {
                 return (
                     <MenuItems key={menuItem.id}
-                                menuItem ={menuItem}
-                                onClick = {props.onClick}
-                               isOpen={ props.isOpen }
+                               menuItem ={menuItem}
+                               isOpenText = {isOpenText}
+                               isActive = {activeId === menuItem.id}
                    />
                 )
             })
@@ -31,4 +35,3 @@ const NavigationMenu = (props: any) => {
   )
 };
 
-export default NavigationMenu;
