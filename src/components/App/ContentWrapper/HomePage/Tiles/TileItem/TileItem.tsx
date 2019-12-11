@@ -1,9 +1,18 @@
 import React from 'react';
 import './TileItem.css';
+import Title from '../../../../../shared/Title/Title';
 
-const TileItem = () => {
+interface Props {
+  tile: any;
+}
+
+const TileItem: React.FC<Props> = ({ tile }) => {
   return (
-    <div>------------TileItem</div>
+    <div className="tiles__tile">
+      <Title variant="h3" text={ tile.name } />
+      <i className={ `icon ${tile.icon}` }></i>
+      <p>{ tile.text }</p>
+    </div>
   )
 }
 

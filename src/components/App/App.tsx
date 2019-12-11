@@ -1,31 +1,21 @@
 import React from 'react';
-import './App.css';
 import '../../assets/fonts/FontAwesome.css';
-import { bindActionCreators } from 'redux'; 
-import { connect } from 'react-redux'; 
-import { changeProjectTitle } from '../../store/actions';
+import styled from "styled-components";
 import MenuContainer from './MenuContainer/MenuContainer';
 import ContentWrapper from './ContentWrapper/ContentWrapper';
 
-const App = () => {
+const Page = styled.div`
+    display: grid;
+    grid-template-columns: max-content  1fr;
+    background-color: rgb(248,247,255);
+    box-sizing: border-box;
+`;
+
+export const App = () => {
   return (
-    <div className="App">
-      <div>Травис Джексон</div>
+    <Page className="App">
       <MenuContainer />
       <ContentWrapper />
-    </div>
+    </Page>
   );
 };
-
-
-const mapStateToProps = (state: any) => {
-  return {projectTitle: state.projectTitle};
-}
-
-const mapActionsCreators = (dispatch: any) => {
-  return {
-      changeProjectTitle: bindActionCreators(changeProjectTitle, dispatch)
-  }
-}
-
-export default connect(mapStateToProps, mapActionsCreators)(App);

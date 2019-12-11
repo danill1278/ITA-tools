@@ -1,11 +1,13 @@
 import React from 'react';
 import './Logo.css';
-const logo = require('../../../../../src/assets/images/Logo.png');
+const logo = require('../../../../../src/assets/images/LogoWhite.png');
+
+
 
 const Logo = () => {
   return (
-     <img src={logo} alt="Logo" />
+     <img className="logo" src={logo} alt="Logo" />
   )
-} 
+} ;
 
 export default Logo;

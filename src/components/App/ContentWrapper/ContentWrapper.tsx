@@ -6,11 +6,10 @@ import ProfilePage from './ProfilePage/ProfilePage';
 
 const ContentWrapper = () => {
   return (
-    <div>
-      <div>ContentWrapper</div>
+    <div className="content-wrapper">
       <Switch>
         <Route path="/" exact component={ HomePage } />
-        <Route path="/profile" component={ ProfilePage } />
+        <Route path="/component" component={ ProfilePage } />2
       </Switch>
     </div>
   )

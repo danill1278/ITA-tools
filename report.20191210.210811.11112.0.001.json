@@ -1,0 +1,326 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191210.210811.11112.0.001.json",
+    "dumpEventTime": "2019-12-10T21:08:11Z",
+    "dumpEventTimeStamp": "1576004891493",
+    "processId": 11112,
+    "cwd": "C:\\Users\\Alina\\Desktop\\ita-tools",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\JetBrains\\WebStorm 2019.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\js-language-service.js",
+      "-id=1575736997984",
+      "-debug-name=eslint"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Education",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 258078843,
+        "nice": 0,
+        "sys": 100571625,
+        "idle": 481779250,
+        "irq": 18689843
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 263948859,
+        "nice": 0,
+        "sys": 71407484,
+        "idle": 505073078,
+        "irq": 3825906
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 286353062,
+        "nice": 0,
+        "sys": 71048359,
+        "idle": 483027968,
+        "irq": 935078
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 282273109,
+        "nice": 0,
+        "sys": 65991937,
+        "idle": 492164281,
+        "irq": 628546
+      }
+    ],
+    "host": "DESKTOP-UQI622K"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7ccf21389",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ccf257cc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ccf24778",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd01332b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd816f4e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd7fef91",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd6cc85c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd6d4961",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd6c9fc3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd6c8794",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd6e9a65",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cd456239",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cdc42c6d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cdbc1fb3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000034ec80c6e29",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 56979456,
+    "totalCommittedMemory": 56979456,
+    "usedMemory": 53658552,
+    "availableMemory": 2100754400,
+    "memoryLimit": 2153775104,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047488,
+        "used": 1047464,
+        "available": 24
+      },
+      "old_space": {
+        "memorySize": 32354304,
+        "committedMemory": 32354304,
+        "capacity": 32297808,
+        "used": 30548272,
+        "available": 1749536
+      },
+      "code_space": {
+        "memorySize": 2785280,
+        "committedMemory": 2785280,
+        "capacity": 2533312,
+        "used": 1979072,
+        "available": 554240
+      },
+      "map_space": {
+        "memorySize": 1839104,
+        "committedMemory": 1839104,
+        "capacity": 1836928,
+        "used": 1459040,
+        "available": 377888
+      },
+      "large_object_space": {
+        "memorySize": 18067456,
+        "committedMemory": 18067456,
+        "capacity": 18042008,
+        "used": 18042008,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550400,
+        "used": 550400,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 380.546,
+    "kernelCpuSeconds": 199.64,
+    "cpuConsumptionPercent": 0.216562,
+    "maxRss": 97976320,
+    "pageFaults": {
+      "IORequired": 9689828,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 58627,
+      "writes": 8687
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "": "::=::\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Alina\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-UQI622K",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Alina",
+    "IDEA_INITIAL_DIRECTORY": "C:\\Users\\Alina\\WebstormProjects\\TodoList\\ReactProject",
+    "LOCALAPPDATA": "C:\\Users\\Alina\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-UQI622K",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\Alina\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Alina\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;E:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alina\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\WebStorm 2019.2.1\\bin;C:\\Users\\Alina\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Alina\\AppData\\Roaming\\npm",
+    "path1": "C:\\Program Files\\Java\\jdk-12.0.1\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 78 Stepping 3, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "4e03",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Alina\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Alina\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-UQI622K",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-UQI622K",
+    "USERNAME": "Alina",
+    "USERPROFILE": "C:\\Users\\Alina",
+    "WebStorm": "C:\\Program Files\\JetBrains\\WebStorm 2019.2.1\\bin;",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}

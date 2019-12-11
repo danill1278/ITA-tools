@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import  App  from './components/App/App';
+import  { App } from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux'; 
 import { Provider } from 'react-redux'; 
 import { rootReducer } from './store/reduces';
 import { BrowserRouter } from 'react-router-dom';
-import Logo from "../src/components/App/MenuContainer/Logo/Logo";
 
 const store = createStore(rootReducer);
 
