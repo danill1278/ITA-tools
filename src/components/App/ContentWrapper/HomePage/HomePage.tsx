@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import Tiles from './Tiles/Tiles';
+import Title from '../../../shared/Title/Title';
 
 const tiles = [
   {
@@ -44,6 +45,10 @@ const tiles = [
 const HomePage = () => {
   return (
     <div>
+      <div className="title">
+        <Title variant="h1" text="ITA Tools" primary />
+      </div>
+      
       <Tiles tiles = { tiles } />
     </div>
   )
