@@ -2,7 +2,7 @@ import {ADD_SUBMENU, REMOVE_SUBMENU} from './actions-constants';
 import {removeSubmenu} from "./actions";
 
 
-const colors = ["rgb(32,35, 63)", "rgb(69,70,91)", "rgb(236,236,241)" ];
+const colors = ["rgb(32,35, 63)", "rgb(69,70,91)", "rgb(236,236,241)"];
 
 const initialState = {
     section1: {
