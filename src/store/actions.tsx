@@ -6,8 +6,7 @@ export const addSubmenu = (id: number) => ({
         id
 });
 
-export const removeSubmenu = (id: number) => ({
-        type: REMOVE_SUBMENU,
-        id
+export const removeSubmenu = () => ({
+        type: REMOVE_SUBMENU
 });
 

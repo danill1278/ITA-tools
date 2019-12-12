@@ -1,6 +1,8 @@
 import React from 'react';
 import MenuItems from './MenuItems/MenuItems';
 import styled from "styled-components";
+import {addSubmenu, removeSubmenu} from "../../../../store/actions";
+import {connect} from "react-redux";
 
 
 const MenuMain = styled.ul `
@@ -18,15 +20,26 @@ const MenuMain = styled.ul `
         "rgb(236,236,241)")};
 `;
 
-export const NavigationMenu = ({color, menu, activeId, isOpenText}: any) => {
+
+
+
+const NavigationMenu = ({color, menu, isOpenText, isOpen, removeSubmenu}: any) => {
+    console.log(color, menu, isOpenText, removeSubmenu);
+    const CloseMenu = styled.div`
+        text-align: right;
+        height: 30px;
+        margin-right: 8px;
+        font-size: 28px;
+        font-weight: bold;
+`;
   return (
         <MenuMain color = {color}>
+                <CloseMenu >{(isOpenText && isOpen) && <i  onClick = {() => removeSubmenu()} className = "icon icon-angle-left"/>}</CloseMenu>
             {menu.map((menuItem: any) => {
                 return (
                     <MenuItems key={menuItem.id}
                                menuItem ={menuItem}
                                isOpenText = {isOpenText}
-                               isActive = {activeId === menuItem.id}
                    />
                 )
             })
@@ -35,3 +48,5 @@ export const NavigationMenu = ({color, menu, activeId, isOpenText}: any) => {
   )
 };
 
+
+export default connect()(NavigationMenu);

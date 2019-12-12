@@ -12,53 +12,10 @@ const Page = styled.div`
     box-sizing: border-box;
 `;
 
-
-function useHookWithRefCallback() {
-    //const ref = useRef(null);
-    const [clickedOutside, setClickedOutside] = useState(false);
-    const setRef = useCallback(node => {
-       /* if (ref.current) {
-            setClickedOutside(true);// Make sure to cleanup any events/references added to the last instance
-        }*/
-        if (node) {
-            setClickedOutside(true);
-            alert(clickedOutside);
-        /*    document.addEventListener('mousedown', setClickedOutside);
-            return () => document.removeEventListener('mousedown', setClickedOutside);*/
-            // Check if a node is actually passed. Otherwise node would be null.
-            // You can now do what you need to, addEventListeners, measure, etc.
-        }
-
-        // Save a reference to the node
-     /*   ref.current = node*/
-    }, []);
-
-   return [setRef]
-}
-
-
-
 export const App = () => {
-  const [setRef] = useHookWithRefCallback();
-   /* const [clickedOutside, setClickedOutside] = useState(false);
-    const myRef = useRef(null);
-
-    const handleClickOutside = (e:any) => {
-        if ( myRef.current && !myRef.current.contains(e.target)) {
-            setClickedOutside(true);
-        }
-    };
-
-    const handleClickInside = () => setClickedOutside(false);
-
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
-    });*/
-
   return (
     <Page className="App">
-      <MenuContainer ref = {setRef}/>
+      <MenuContainer/>
       <ContentWrapper />
     </Page>
   );
