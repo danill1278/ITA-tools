@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53afbdad8e1f6a615d94646fe25960de",
+    "revision": "affc8d36b70f84d2625e6c524fb88faa",
     "url": "/ita-tools/index.html"
   },
   {
-    "revision": "4523711e53d960619ba3",
-    "url": "/ita-tools/static/css/main.b5c165bc.chunk.css"
+    "revision": "228144d96de40cadec61",
+    "url": "/ita-tools/static/css/main.d7537c09.chunk.css"
   },
   {
-    "revision": "bb46e5077ea5fbf63f26",
-    "url": "/ita-tools/static/js/2.343bd4ea.chunk.js"
+    "revision": "5557c22058bda714f865",
+    "url": "/ita-tools/static/js/2.2fa0ec76.chunk.js"
   },
   {
-    "revision": "4523711e53d960619ba3",
-    "url": "/ita-tools/static/js/main.ed62cebb.chunk.js"
+    "revision": "228144d96de40cadec61",
+    "url": "/ita-tools/static/js/main.7573c2f0.chunk.js"
   },
   {
     "revision": "b4324665e4db04ef27ad",
     "url": "/ita-tools/static/js/runtime-main.62a55622.js"
+  },
+  {
+    "revision": "ed859861f82f9184aeb1cbe11488bd4b",
+    "url": "/ita-tools/static/media/LogoWhite.ed859861.png"
   },
   {
     "revision": "1a8bedae279e778d07a8739fc9e4fefa",
