@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,4 +12,21 @@ body {
 .App {
   display: grid;
   grid-template-columns: 1fr 10fr;
+=======
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+}
+
+.App {
+  padding: 10px 50px;
+}
+
+.form {
+  padding: 60px 0px;
+>>>>>>> 19055f3d2757ed096daaa8e4f8e74c86b72692ee
 }

@@ -18,7 +18,12 @@ const MainMenu = styled.div`
 const MenuContainer = ({ ...props }: any) => {
   console.dir(props);
   return (
+<<<<<<< HEAD
     <MainMenu>
+=======
+    <div>
+      <div>Трэвис Джэксон</div>
+>>>>>>> 19055f3d2757ed096daaa8e4f8e74c86b72692ee
       <Logo />
       <NavigationMenu
         menu={props.section1.menu}
