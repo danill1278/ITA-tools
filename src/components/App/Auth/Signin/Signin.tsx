@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { bindActionCreators } from "redux";
-import { Form, Field } from "react-final-form";
+import { Form } from "react-final-form";
+import SignupInput from '../../../../HOC/AuthHOC/SignupInputHOC';
+import { required, email, password, composeValidators } from '../validation';
 import { SigninInterface } from "./Interfaces/SignInInterface";
 import { InitialStateInterface } from "../../../../store/auth/initialStateInterface";
 import {
@@ -9,8 +11,7 @@ import {
   DialogActions,
   DialogContent,
   Tabs,
-  Tab,
-  TextField
+  Tab
 } from "@material-ui/core";
 import styled from "styled-components";
 import { signInUser, signOutUser } from "../../../../store/auth/actionCreators";
@@ -40,7 +41,7 @@ const initialValues: UserForm = {
   password: ""
 };
 
-const SignIn = ({ uid, error, signOutUser, signInUser }: SigninInterface) => {
+const SignIn = ({ uid, signOutUser, signInUser }: SigninInterface) => {
   const [isOpen, setOpen] = useState(true);
   const [value, setValue] = useState(0);
 
@@ -89,34 +90,22 @@ const SignIn = ({ uid, error, signOutUser, signInUser }: SigninInterface) => {
               }}
             >
               <DialogContent>
-                <Field name="email">
-                  {({ input }) => (
-                    <TextField
-                      id="outlined-basic email"
-                      label="Email"
-                      className="input"
-                      variant="outlined"
-                      type="email"
-                      name="email"
-                      {...input}
-                    />
-                  )}
-                </Field>
-                <Field name="password">
-                  {({ input }) => (
-                    <TextField
-                      className="input"
-                      id="outlined-basic pass"
-                      label={
-                        error ? "Email or password isn't correct" : "Password"
-                      }
-                      variant="outlined"
-                      type="password"
-                      name="password"
-                      {...input}
-                    />
-                  )}
-                </Field>
+                <SignupInput
+                    id="EmailSignup"
+                    label="Email"
+                    variant="outlined"
+                    validate={composeValidators(required, email)}
+                    type="email"
+                    fieldName="email"
+                />
+                <SignupInput
+                    id="PasswordSignup"
+                    label="Password"
+                    variant="outlined"
+                    validate={composeValidators(required, password)}
+                    type="password"
+                    fieldName="password"
+                />
               </DialogContent>
               <DialogActions>
                 <Button
@@ -143,9 +132,7 @@ const mapDispatchToProps = (dispatch: any) => {
 
 const mapStateToProps = (state: InitialStateInterface) => {
   return {
-    token: state.userReducer.token,
-    uid: state.userReducer.uid,
-    error: state.userReducer.error
+    uid: state.userReducer.uid
   };
 };
 

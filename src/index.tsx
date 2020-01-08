@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
-import  App  from './components/App/App';
-import * as serviceWorker from './serviceWorker';
-import { Provider } from 'react-redux';
 import rootReducer from './store/auth/reducers';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import  App  from './components/App/App';
 import { ThemeProvider, StylesProvider, withStyles } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { createStore, applyMiddleware } from 'redux';
@@ -23,7 +21,7 @@ const theme = createMuiTheme({
       main: '#d73c2a'
     },
     secondary: {
-      main: '#20233f'
+      main: '#346ef3'
     }
   }
 });
@@ -76,7 +74,7 @@ const GlobalCSS = withStyles({
     '.MuiDialogContent-root': {
       textAlign: 'center',
       position: 'relative'
-    },
+    }
   }
 })(() => null);
 
@@ -96,4 +94,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-serviceWorker.unregister();

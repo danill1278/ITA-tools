@@ -19,13 +19,13 @@ const App = () => {
 };
 
 const mapStateToProps = (state: any) => {
-  return { projectTitle: state.projectTitle };
+  return { projectTitle: state.projectTitle }
 };
 
 const mapActionsCreators = (dispatch: any) => {
   return {
     changeProjectTitle: bindActionCreators(changeProjectTitle, dispatch)
-  };
-};
+  }
+}
 
 export default connect(mapStateToProps, mapActionsCreators)(App);
