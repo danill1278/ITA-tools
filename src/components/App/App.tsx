@@ -2,16 +2,31 @@ import React from "react";
 import "./App.css";
 import MenuContainer from "./MenuContainer/MenuContainer";
 import ContentWrapper from "./ContentWrapper/ContentWrapper";
-import AuthPopUp from "./Auth/Auth";
+import Auth from "./Auth/Auth";
+import ProtectedRoute from "../../HOC/ProtectedRoute";
+import { Route } from "react-router-dom";
+import { connect } from "react-redux";
 
-const App = () => {
+interface Props {
+  id: string;
+}
+
+const App: React.FC<Props> = ({ id }) => {
   return (
     <div className="App">
-      <AuthPopUp />
-      <MenuContainer />
-      <ContentWrapper />
+      <Route exact path="/">
+        <MenuContainer />
+        <ContentWrapper />
+      </Route>
+      <ProtectedRoute path="/auth" redirect="/" isAuth={!id}>
+        <Auth />
+      </ProtectedRoute>
     </div>
   );
 };
 
-export default App;
+const mapStateToProps = (state: any) => ({
+  id: state.authReducer.uid
+});
+
+export default connect(mapStateToProps)(App);

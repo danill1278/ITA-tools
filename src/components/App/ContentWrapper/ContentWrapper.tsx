@@ -15,17 +15,9 @@ const StyledContentWrapper = styled.div`
   padding: 40px 0px;
 `;
 
-const StyledModalTest = styled.div`
-  margin-top: 100px;
-`;
-
-
 const ContentWrapper = (props: any) => {
-
   return (
     <StyledContentWrapper>
-      <StyledModalTest>
-      </StyledModalTest>
       <Switch>
         <Route path="/" exact component={ HomePage } />
         <ProtectedRoute path="/profile" redirect="/" isAuth={!!props.id}>
@@ -36,10 +28,8 @@ const ContentWrapper = (props: any) => {
   )
 }
 
-const mapStateToProps = (state: any) => {
-  return {
-    id: state.authReducer.uid
-  }
-}
+const mapStateToProps = (state: any) => ({
+  id: state.authReducer.uid
+});
 
-export default connect(mapStateToProps, null)(ContentWrapper);
+export default connect(mapStateToProps)(ContentWrapper);
