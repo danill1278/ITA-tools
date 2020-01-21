@@ -3,7 +3,6 @@ import './App.css';
 import MenuContainer from './MenuContainer/MenuContainer';
 import ContentWrapper from './ContentWrapper/ContentWrapper';
 import AuthPopUp from './Auth/Auth';
-import Loader from './Loader/Loader';
 
 const App = () => {
   return (
