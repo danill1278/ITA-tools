@@ -4,7 +4,7 @@ import TabButtons from "./Tabs";
 import SoftServeBG from '../../../assets/images/softserve.jpg';
 
 const AuthSide = styled.div`
-  width: 60%;
+  width: 50%;
   height: 100vh;
   color: #fff;
   padding: 50px;
@@ -17,7 +17,7 @@ const AuthSide = styled.div`
   background-image: url(${SoftServeBG});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -200px 0px;
+  background-position: -100px 0px;
   box-shadow: rgba(36,195,249, .4) 0 0 0 100vw inset;
 
   @media (max-width: 1300px) {
@@ -41,10 +41,19 @@ const AuthSideH3 = styled.h3`
 
 const AuthForm = styled.div`
   height: 100vh;
-  width: 40%;
+  padding: 60px 0px 30px 0px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar { width: 3px; height: 3px;}
+  &::-webkit-scrollbar-button {  background-color: #fff; }
+  &::-webkit-scrollbar-track {  background-color: #fff;}
+  &::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+  &::-webkit-scrollbar-thumb { height: 50px; background-color: rgba(36,195,249, 1); border-radius: 10px;}
+
   @media (max-width: 1300px) {
     width: 60%;
   }

@@ -18,7 +18,7 @@ const App: React.FC<Props> = ({ id }) => {
         <MenuContainer />
         <ContentWrapper />
       </Route>
-      <ProtectedRoute path="/auth" redirect="/" isAuth={!id}>
+      <ProtectedRoute path="/auth" redirect="/" isAuth={!!id}>
         <Auth />
       </ProtectedRoute>
     </div>
