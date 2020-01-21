@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/ita-tools/static/css/main.0e29db43.chunk.css",
-    "main.js": "/ita-tools/static/js/main.d9439cc1.chunk.js",
-    "main.js.map": "/ita-tools/static/js/main.d9439cc1.chunk.js.map",
+    "main.js": "/ita-tools/static/js/main.2f2c7b4b.chunk.js",
+    "main.js.map": "/ita-tools/static/js/main.2f2c7b4b.chunk.js.map",
     "runtime-main.js": "/ita-tools/static/js/runtime-main.11958571.js",
     "runtime-main.js.map": "/ita-tools/static/js/runtime-main.11958571.js.map",
-    "static/js/2.8d2bd66a.chunk.js": "/ita-tools/static/js/2.8d2bd66a.chunk.js",
-    "static/js/2.8d2bd66a.chunk.js.map": "/ita-tools/static/js/2.8d2bd66a.chunk.js.map",
+    "static/js/2.29ff3c08.chunk.js": "/ita-tools/static/js/2.29ff3c08.chunk.js",
+    "static/js/2.29ff3c08.chunk.js.map": "/ita-tools/static/js/2.29ff3c08.chunk.js.map",
     "index.html": "/ita-tools/index.html",
-    "precache-manifest.879dada099dec865984f10b3824c0e16.js": "/ita-tools/precache-manifest.879dada099dec865984f10b3824c0e16.js",
+    "precache-manifest.3d70af0f7f251fd280393a89a3d08da5.js": "/ita-tools/precache-manifest.3d70af0f7f251fd280393a89a3d08da5.js",
     "service-worker.js": "/ita-tools/service-worker.js",
     "static/css/main.0e29db43.chunk.css.map": "/ita-tools/static/css/main.0e29db43.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.11958571.js",
-    "static/js/2.8d2bd66a.chunk.js",
+    "static/js/2.29ff3c08.chunk.js",
     "static/css/main.0e29db43.chunk.css",
-    "static/js/main.d9439cc1.chunk.js"
+    "static/js/main.2f2c7b4b.chunk.js"
   ]
 }
