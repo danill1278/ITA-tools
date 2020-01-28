@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ita-tools/static/css/main.13313c3e.chunk.css",
-    "main.js": "/ita-tools/static/js/main.e6b143d1.chunk.js",
-    "main.js.map": "/ita-tools/static/js/main.e6b143d1.chunk.js.map",
+    "main.css": "/ita-tools/static/css/main.e7825039.chunk.css",
+    "main.js": "/ita-tools/static/js/main.d3744a2f.chunk.js",
+    "main.js.map": "/ita-tools/static/js/main.d3744a2f.chunk.js.map",
     "runtime-main.js": "/ita-tools/static/js/runtime-main.d658050a.js",
     "runtime-main.js.map": "/ita-tools/static/js/runtime-main.d658050a.js.map",
-    "static/js/2.62d9c7d3.chunk.js": "/ita-tools/static/js/2.62d9c7d3.chunk.js",
-    "static/js/2.62d9c7d3.chunk.js.map": "/ita-tools/static/js/2.62d9c7d3.chunk.js.map",
+    "static/js/2.a8aaf018.chunk.js": "/ita-tools/static/js/2.a8aaf018.chunk.js",
+    "static/js/2.a8aaf018.chunk.js.map": "/ita-tools/static/js/2.a8aaf018.chunk.js.map",
     "index.html": "/ita-tools/index.html",
-    "precache-manifest.7f9e954b1b4eec35076f8509ccf49b11.js": "/ita-tools/precache-manifest.7f9e954b1b4eec35076f8509ccf49b11.js",
+    "precache-manifest.3582cc6277ee05a457fd4264aedff85d.js": "/ita-tools/precache-manifest.3582cc6277ee05a457fd4264aedff85d.js",
     "service-worker.js": "/ita-tools/service-worker.js",
-    "static/css/main.13313c3e.chunk.css.map": "/ita-tools/static/css/main.13313c3e.chunk.css.map",
+    "static/css/main.e7825039.chunk.css.map": "/ita-tools/static/css/main.e7825039.chunk.css.map",
     "static/media/ava.jpg": "/ita-tools/static/media/ava.d5f51047.jpg",
     "static/media/softserve.jpg": "/ita-tools/static/media/softserve.87db0d46.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d658050a.js",
-    "static/js/2.62d9c7d3.chunk.js",
-    "static/css/main.13313c3e.chunk.css",
-    "static/js/main.e6b143d1.chunk.js"
+    "static/js/2.a8aaf018.chunk.js",
+    "static/css/main.e7825039.chunk.css",
+    "static/js/main.d3744a2f.chunk.js"
   ]
 }
